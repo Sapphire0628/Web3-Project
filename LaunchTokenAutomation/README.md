@@ -1,6 +1,6 @@
 # Smart Contract Deployment using Truffle Migrations and Python Web3
 
-This repository provides a guide on deploying a smart contract using Truffle migrations and Python Web3.
+This repository provides a guide on automately deploying a smart contract using Truffle migrations and Python Web3.
 
 ## Prerequisites
 
