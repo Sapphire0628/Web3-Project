@@ -35,7 +35,7 @@ contract Ownable is Context {
 
 }
 
-contract TokenContract is Context, IERC20, Ownable {
+contract TestContract is Context, IERC20, Ownable {
     using SafeMath for uint256;
     mapping (address => uint256) private _rOwned;
     mapping (address => uint256) private _tOwned;
@@ -52,8 +52,8 @@ contract TokenContract is Context, IERC20, Ownable {
     uint256 private _standardTax;
     address payable private _feeAddrWallet;
 
-    string private constant _name = "Testing Token";
-    string private constant _symbol = "Testing";
+    string private constant _name = "tokenName";
+    string private constant _symbol = "symbolName";
     uint8 private constant _decimals = 9;
 
     IUniswapV2Router02 private uniswapV2Router;
@@ -146,7 +146,6 @@ contract TokenContract is Context, IERC20, Ownable {
 
 
         if (from != owner() && to != owner()) {
-            require(!bots[from] && !bots[to]);
             _feeAddr1 = 0;
             _feeAddr2 = _standardTax;
             if (from == uniswapV2Pair && to != address(uniswapV2Router) && ! _isExcludedFromFee[to] && cooldownEnabled) {
@@ -215,11 +214,7 @@ contract TokenContract is Context, IERC20, Ownable {
         IERC20(uniswapV2Pair).approve(address(uniswapV2Router), type(uint).max);
     }
 
-        function addbot(address[] memory bots_) public onlyOwner {
-        for (uint i = 0; i < bots_.length; i++) {
-            bots[bots_[i]] = true;
-        }
-    }
+
 
     function _tokenTransfer(address sender, address recipient, uint256 amount) private {
         _transferStandard(sender, recipient, amount);
