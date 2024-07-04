@@ -1,4 +1,7 @@
 # Web3-Project
 
-## 1. Launch Token Automation
-The LaunchTokenAutomation project is a repository that provides automation scripts and tools for launching tokens on various blockchain networks. 
+## 1. Smart Contract Deployment Tool
+The Smart Contract Deployment Tool facilitates the deployment of Ethereum smart contracts using Truffle and Web3. It allows users to generate and customize smart contract templates, deploy them to the Ethereum blockchain, and retrieve the contract address.
+
+## 2. Ethereum Smart Contract Scanner
+The Ethereum Smart Contract Scanner scans the Ethereum blockchain for smart contract transactions and stores relevant contract information in a MySQL database.
