@@ -1,4 +1,4 @@
-# Ethereum Smart Contract Scanner (2021)
+# Ethereum Smart Contract Scanner (2022)
 
 The Ethereum Smart Contract Scanner scans the Ethereum blockchain for the deployed smart contract and stores relevant contract information in a MySQL database.
 
