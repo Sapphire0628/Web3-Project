@@ -1,13 +1,13 @@
 # Ethereum Smart Contract Scanner (2021)
 
-The Ethereum Smart Contract Scanner scans the Ethereum blockchain for smart contract transactions and stores relevant contract information in a MySQL database.
+The Ethereum Smart Contract Scanner scans the Ethereum blockchain for the deployed smart contract and stores relevant contract information in a MySQL database.
 
 ## Features
 
-- Scans the Ethereum blockchain for smart contract transactions
+- Scans the Ethereum blockchain for the deployed smart contract at least block 
 - Retrieves contract addresses and associated token names
 - Stores contract information in a MySQL database
-- Supports automatic deletion of launch contracts from the database
+- Supports automatic deletion of launched contracts from the database
 - Provides real-time notifications using the system bell sound
 
 ## Prerequisites
