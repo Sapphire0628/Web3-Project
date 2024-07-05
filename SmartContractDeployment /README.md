@@ -1,4 +1,4 @@
-# Smart Contract Deployment Tool (2021)
+# Smart Contract Deployment Tool (2022)
 
 The Smart Contract Deployment Tool facilitates the deployment of Ethereum smart contracts using Truffle and Web3. It allows users to generate and customize smart contract templates, deploy them to the Ethereum blockchain, and retrieve the contract address.
 
